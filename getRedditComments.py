@@ -20,7 +20,7 @@ while (len(comments)<30000)):
 	submission = submissions[iter]
 	submission.comments.replace_more(limit = 0)
 	comments.extend(submission.comments.list())
-	
+	iter+=1
 
 filename = 'redditComments.h5'
 
